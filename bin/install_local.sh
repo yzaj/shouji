@@ -5,7 +5,7 @@ set -euo pipefail
 
 
 
-
+echo "Yes!"
 
 
 
