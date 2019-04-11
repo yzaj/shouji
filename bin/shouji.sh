@@ -17,7 +17,10 @@ err() {
 #### 变量 ####
 readonly oneself="$0"
 readonly projectnum="$1"
+
+set +u
 phonenum="$2"
+set -u
 
 #### 主体 ####
 if ! type phone.sh; then
