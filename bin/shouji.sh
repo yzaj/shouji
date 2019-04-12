@@ -24,9 +24,11 @@ if ! type phone.sh; then
   exit "${E_NOT_FOUND}"
 fi
 
+if [[ -z "${phonenums}" ]]; then
+  phonenums='all'
+fi
 
-
-
+readonly phonenums
 
 
 
