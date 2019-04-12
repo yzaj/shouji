@@ -18,6 +18,8 @@ err() {
 readonly oneself="$0"
 readonly projectnum="$1"
 
+phonenums="$(echo "$@" | sed 's/^[0-9]\{1,\}[ \t]\{1,\}//g')"
+
 set +u
 phonenum="$2"
 set -u
