@@ -45,8 +45,8 @@ case "${projectnum}" in
     phone.sh ${phonenums} start-fw,sleep:15,use-fw,sleep:10,run-fw
     ;;
   13)
-    # 
-    phone.sh ${phonenums} 
+    # 打开 TL
+    phone.sh ${phonenums} start-tl,sleep:30,update-tl,sleep:15,skip-tl
     ;;
   14)
     # 
