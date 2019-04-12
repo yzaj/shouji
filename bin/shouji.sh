@@ -15,6 +15,8 @@ err() {
 
 #### 变量 ####
 readonly oneself="$0"
+readonly projectnum="$1"
+phonenums="$(echo "$@" | sed 's/^[0-9]\{1,\}//g')"
 
 #### 主体 ####
 if ! type phone.sh; then
@@ -28,3 +30,20 @@ fi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "${projectnum}"
+echo "${phonenums}"
