@@ -49,8 +49,8 @@ case "${projectnum}" in
     phone.sh ${phonenums} start-tl,sleep:30,update-tl,sleep:15,skip-tl
     ;;
   14)
-    # 
-    phone.sh ${phonenums} 
+    # 重启
+    phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
