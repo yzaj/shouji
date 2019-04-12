@@ -4,6 +4,7 @@
 set -euo pipefail
 
 #### 常量 ####
+readonly E_UNRECOGNIZED_OPTION=2
 readonly E_NOT_FOUND=127
 
 #### 包含 ####
@@ -30,6 +31,7 @@ fi
 
 readonly phonenums
 
+case "${projectnum}" in
 
 
 
@@ -40,12 +42,8 @@ readonly phonenums
 
 
 
-
-
-
-
-
-
-
-echo "${projectnum}"
-echo "${phonenums}"
+  *)
+    err "${oneself##*/}: unrecognized option '${projectnum}'"
+    exit "${E_UNRECOGNIZED_OPTION}"
+    ;;
+esac
