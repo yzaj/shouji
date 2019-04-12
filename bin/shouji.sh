@@ -36,19 +36,19 @@ case "${projectnum}" in
     # 
     phone.sh ${phonenums} 
     ;;
-  1)
+  11)
+    # 重启并解锁
+    phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:60,unlock
+    ;;
+  12)
     # 
     phone.sh ${phonenums} 
     ;;
-  1)
+  13)
     # 
     phone.sh ${phonenums} 
     ;;
-  1)
-    # 
-    phone.sh ${phonenums} 
-    ;;
-  1)
+  14)
     # 
     phone.sh ${phonenums} 
     ;;
