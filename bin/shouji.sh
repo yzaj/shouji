@@ -33,8 +33,8 @@ readonly phonenums
 
 case "${projectnum}" in
   1)
-    # 
-    phone.sh ${phonenums} 
+    # 一键开机
+    phone.sh ${phonenums} sleep:1
     ;;
   11)
     # 重启并解锁
