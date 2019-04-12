@@ -41,8 +41,8 @@ case "${projectnum}" in
     phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:60,unlock
     ;;
   12)
-    # 
-    phone.sh ${phonenums} 
+    # 打开 FW
+    phone.sh ${phonenums} start-fw,sleep:15,use-fw,sleep:10,run-fw
     ;;
   13)
     # 
