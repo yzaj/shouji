@@ -32,16 +32,26 @@ fi
 readonly phonenums
 
 case "${projectnum}" in
-
-
-
-
-
-
-
-
-
-
+  1)
+    # 
+    phone.sh ${phonenums} 
+    ;;
+  1)
+    # 
+    phone.sh ${phonenums} 
+    ;;
+  1)
+    # 
+    phone.sh ${phonenums} 
+    ;;
+  1)
+    # 
+    phone.sh ${phonenums} 
+    ;;
+  1)
+    # 
+    phone.sh ${phonenums} 
+    ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
     exit "${E_UNRECOGNIZED_OPTION}"
