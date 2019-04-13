@@ -49,6 +49,6 @@ if [[ "${num}" == "${READMAX}" ]]; then
   exit "${E_OPERATION_FAILED}"
 fi
 
-color::countdown 20 35 '程序将在 ' 34 ' 秒后自动执行, 请停止操作' 34
+color::countdown 5 35 '程序将在 ' 34 ' 秒后自动执行, 请停止操作' 34
 
 color::timer 34 '成功: ' 32
