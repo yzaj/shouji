@@ -35,7 +35,3 @@ if [[ -d "${repodir}/bin" ]]; then
 fi
 
 mkdir -p "${tempdir}"
-
-if [[ -s "${repodir}/bin/install_local.sh" ]]; then
-  bash "${repodir}"/bin/install_local.sh
-fi
