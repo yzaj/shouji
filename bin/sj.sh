@@ -18,14 +18,11 @@ set -euo pipefail
 
 
 cat <<-'EOF'
-
-
-
-
-
-
-
-
+ 1    一键开机
+11    重启并解锁
+12    打开 FW
+13    打开 TL
+14    重启
 EOF
 
 
