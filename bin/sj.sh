@@ -56,4 +56,4 @@ color::countdown 5 35 '程序将在 ' 34 ' 秒后自动执行, 请停止操作' 
 shouji.sh "${projectnum}" all
 
 echo ''
-color::timer 34 '已完成, 耗时: ' 32
+color::timer 34 '已完成! 耗时: ' 32
