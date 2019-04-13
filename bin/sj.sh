@@ -5,6 +5,8 @@ set -euo pipefail
 
 #### 常量 ####
 readonly ROOTDIR='/yzaj'
+readonly READMAX=3
+readonly E_OPERATION_FAILED=3
 
 #### 包含 ####
 . "${ROOTDIR}"/shell/lib/color.sh
@@ -30,7 +32,22 @@ cat <<-'EOF'
 
 EOF
 
-color::read '请输入编号: ' 36 'projectnum'
+nums="$(seq "${READMAX}")"
+readonly nums
+
+for num in ${nums}; do
+  color::read '请输入编号: ' 35 'projectnum'
+  echo ''
+  
+  if [[ "${projectnum}" =~ ^[0-9]{1,}$ ]]; then
+    break
+  fi
+done
+
+if [[ "${num}" == "${READMAX}" ]]; then
+  color::echo '错误: 超出可输入次数, 程序已中止' 31
+  exit "${E_OPERATION_FAILED}"
+fi
 
 
 
@@ -38,8 +55,3 @@ color::read '请输入编号: ' 36 'projectnum'
 
 
 
-
-
-
-
-echo "${projectnum}"
