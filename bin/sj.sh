@@ -42,12 +42,12 @@ for num in ${nums}; do
   if [[ "${projectnum}" =~ ^[0-9]{1,}$ ]]; then
     break
   fi
+  
+  if [[ "${num}" == "${READMAX}" ]]; then
+    color::echo '错误: 超出可输入次数, 程序已中止' 31
+    exit "${E_OPERATION_FAILED}"
+  fi
 done
-
-if [[ "${num}" == "${READMAX}" ]]; then
-  color::echo '错误: 超出可输入次数, 程序已中止' 31
-  exit "${E_OPERATION_FAILED}"
-fi
 
 color::countdown 5 35 '程序将在 ' 34 ' 秒后自动执行, 请停止操作' 34
 
