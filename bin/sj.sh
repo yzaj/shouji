@@ -5,7 +5,7 @@ set -euo pipefail
 
 #### 常量 ####
 readonly ROOTDIR='/yzaj'
-readonly READMAX=3
+readonly READMAX=10
 readonly E_OPERATION_FAILED=3
 
 #### 包含 ####
