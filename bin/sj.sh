@@ -4,8 +4,10 @@
 set -euo pipefail
 
 #### 常量 ####
+readonly ROOTDIR='/yzaj'
 
 #### 包含 ####
+. "${ROOTDIR}"/shell/lib/color.sh
 
 #### 函数 ####
 
@@ -28,8 +30,7 @@ cat <<-'EOF'
 
 EOF
 
-echo -n '请输入编号: '
-read projectnum
+color::read '请输入编号: ' 36 'projectnum'
 
 
 
@@ -41,4 +42,4 @@ read projectnum
 
 
 
-
+echo "${projectnum}"
