@@ -35,3 +35,5 @@ if [[ -d "${repodir}/bin" ]]; then
 fi
 
 mkdir -p "${tempdir}"
+
+ln -s "${repodir}"/bin/sj.sh "${repodir}"/bin/sj
