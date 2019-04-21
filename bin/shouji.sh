@@ -52,6 +52,34 @@ case "${projectnum}" in
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
+  21)
+    # 开始 中间
+    phone.sh ${phonenums} right-center,sleep:5,play
+    ;;
+  22)
+    # 停止 中间
+    phone.sh ${phonenums} right-center
+    ;;
+  23)
+    # 开始 左下
+    phone.sh ${phonenums} left-lower,sleep:5,play
+    ;;
+  24)
+    # 停止 左下
+    phone.sh ${phonenums} left-lower
+    ;;
+  25)
+    # 开始 右下
+    phone.sh ${phonenums} right-lower,sleep:5,play
+    ;;
+  26)
+    # 停止 右下
+    phone.sh ${phonenums} right-lower
+    ;;
+  27)
+    # 切换账号
+    phone.sh ${phonenums} left-top,sleep:5,blue
+    ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
     exit "${E_UNRECOGNIZED_OPTION}"
