@@ -46,9 +46,13 @@ case "${projectnum}" in
     ;;
   13)
     # 打开 TL
-    phone.sh ${phonenums} start-tl,sleep:30,update-tl
+    phone.sh ${phonenums} start-tl
     ;;
   14)
+    # 更新 TL
+    phone.sh ${phonenums} update-tl
+    ;;
+  15)
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
