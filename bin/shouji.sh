@@ -57,27 +57,27 @@ case "${projectnum}" in
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
   21)
-    # 开始 中间
+    # 中间开始
     phone.sh ${phonenums} right-center,sleep:5,play
     ;;
   22)
-    # 停止 中间
-    phone.sh ${phonenums} right-center,sleep:3,click
-    ;;
-  23)
-    # 开始 左下
+    # 左下开始
     phone.sh ${phonenums} left-lower,sleep:5,play
     ;;
-  24)
-    # 停止 左下
-    phone.sh ${phonenums} left-lower,sleep:3,click
-    ;;
-  25)
-    # 开始 右下
+  23)
+    # 右下开始
     phone.sh ${phonenums} right-lower,sleep:5,play
     ;;
+  24)
+    # 中间停止
+    phone.sh ${phonenums} right-center,sleep:3,click
+    ;;
+  25)
+    # 左下停止
+    phone.sh ${phonenums} left-lower,sleep:3,click
+    ;;
   26)
-    # 停止 右下
+    # 右下停止
     phone.sh ${phonenums} right-lower,sleep:3,click
     ;;
   27)
