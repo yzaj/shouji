@@ -32,10 +32,6 @@ fi
 readonly phonenums
 
 case "${projectnum}" in
-  1)
-    # 一键开机
-    phone.sh ${phonenums} sleep:1
-    ;;
   11)
     # 重启并解锁
     phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:60,unlock
