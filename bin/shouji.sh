@@ -62,7 +62,7 @@ case "${projectnum}" in
     ;;
   22)
     # 停止 中间
-    phone.sh ${phonenums} right-center
+    phone.sh ${phonenums} right-center,sleep:3,click
     ;;
   23)
     # 开始 左下
@@ -70,7 +70,7 @@ case "${projectnum}" in
     ;;
   24)
     # 停止 左下
-    phone.sh ${phonenums} left-lower
+    phone.sh ${phonenums} left-lower,sleep:3,click
     ;;
   25)
     # 开始 右下
@@ -78,7 +78,7 @@ case "${projectnum}" in
     ;;
   26)
     # 停止 右下
-    phone.sh ${phonenums} right-lower
+    phone.sh ${phonenums} right-lower,sleep:3,click
     ;;
   27)
     # 切换账号
