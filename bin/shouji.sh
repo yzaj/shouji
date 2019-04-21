@@ -46,7 +46,7 @@ case "${projectnum}" in
     ;;
   13)
     # 打开 TL
-    phone.sh ${phonenums} start-tl,sleep:30,update-tl,sleep:15,skip-tl
+    phone.sh ${phonenums} start-tl,sleep:30,update-tl
     ;;
   14)
     # 重启
