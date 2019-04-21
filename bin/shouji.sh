@@ -82,7 +82,7 @@ case "${projectnum}" in
     ;;
   27)
     # 切换账号
-    phone.sh ${phonenums} left-top,sleep:5,blue
+    phone.sh ${phonenums} left-top,sleep:5,blue,sleep:10,white
     ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
