@@ -52,9 +52,9 @@ case "${projectnum}" in
     # 退出 TL
     phone.sh ${phonenums} exit-tl
     ;;
-  16)
-    # 重启
-    phone.sh ${phonenums} exit-fw,exit-tl,reboot
+  27)
+    # 切换账号
+    phone.sh ${phonenums} left-top,sleep:5,blue,sleep:10,white
     ;;
   21)
     # 中间开始
@@ -80,9 +80,9 @@ case "${projectnum}" in
     # 右下停止
     phone.sh ${phonenums} right-lower,sleep:3,click
     ;;
-  27)
-    # 切换账号
-    phone.sh ${phonenums} left-top,sleep:5,blue,sleep:10,white
+  16)
+    # 重启
+    phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
