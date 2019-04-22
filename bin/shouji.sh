@@ -84,6 +84,26 @@ case "${projectnum}" in
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
+  32)
+    # 关机
+    phone.sh ${phonenums} exit-fw,exit-tl,halt
+    ;;
+  33)
+    # 截屏
+    phone.sh ${phonenums} screencap
+    ;;
+  34)
+    # 安装 APK
+    phone.sh ${phonenums} apk
+    ;;
+  35)
+    # Fastboot
+    phone.sh ${phonenums} bootloader
+    ;;
+  36)
+    # Recovery
+    phone.sh ${phonenums} recovery
+    ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
     exit "${E_UNRECOGNIZED_OPTION}"
