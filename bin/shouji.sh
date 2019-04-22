@@ -49,6 +49,10 @@ case "${projectnum}" in
     phone.sh ${phonenums} update-tl
     ;;
   15)
+    # 退出 TL
+    phone.sh ${phonenums} exit-tl
+    ;;
+  16)
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
