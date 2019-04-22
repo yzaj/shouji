@@ -33,7 +33,7 @@ readonly phonenums
 
 case "${projectnum}" in
   11)
-    # 重启并解锁
+    # 重启解锁
     phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:60,unlock
     ;;
   12)
@@ -52,7 +52,7 @@ case "${projectnum}" in
     # 退出 TL
     phone.sh ${phonenums} exit-tl
     ;;
-  27)
+  16)
     # 切换账号
     phone.sh ${phonenums} left-top,sleep:5,blue,sleep:10,white
     ;;
@@ -80,7 +80,7 @@ case "${projectnum}" in
     # 右下停止
     phone.sh ${phonenums} right-lower,sleep:3,click
     ;;
-  16)
+  31)
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
