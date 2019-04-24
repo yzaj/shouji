@@ -19,7 +19,7 @@ err() {
 # 参数 1: 
 # 返回值: 
 # 备  注: 该函数的使用范围受限
-default() {
+err_uo() {
   sed -n 25,45p "${ROOTDIR}"/shouji/bin/sj.sh
   
   err "${oneself##*/}: unrecognized option '${qq}'"
@@ -36,7 +36,7 @@ set -u
 
 #### 主体 ####
 if [[ -z "${projectnum}" ]]; then
-  default
+  err_uo
 fi
 
 if [[ "${projectnum}" == "11" ]]; then
@@ -46,16 +46,16 @@ fi
 
 case "${qq}" in
   1-1)
-    default
+    err_uo
     ;;
   1-2)
-    default
+    err_uo
     ;;
   2-1)
-    default
+    err_uo
     ;;
   2-2)
-    default
+    err_uo
     ;;
   3-1)
     shouji.sh "${projectnum}" 
@@ -88,24 +88,24 @@ case "${qq}" in
     shouji.sh "${projectnum}" 
     ;;
   8-1)
-    default
+    err_uo
     ;;
   8-2)
-    default
+    err_uo
     ;;
   9-1)
-    default
+    err_uo
     ;;
   9-2)
-    default
+    err_uo
     ;;
   10-1)
-    default
+    err_uo
     ;;
   10-2)
-    default
+    err_uo
     ;;
   *)
-    default
+    err_uo
     ;;
 esac
