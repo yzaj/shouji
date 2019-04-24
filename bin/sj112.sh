@@ -16,24 +16,27 @@ readonly qq="$2"
 set -u
 
 #### 主体 ####
+if [[ -z "${projectnum}" ]]; then
+  default
+fi
 
-
-
-
-
+if [[ "${projectnum}" == "11" ]]; then
+  shouji.sh "${projectnum}" 
+  exit
+fi
 
 case "${qq}" in
   1-1)
-    :
+    default
     ;;
   1-2)
-    :
+    default
     ;;
   2-1)
-    :
+    default
     ;;
   2-2)
-    :
+    default
     ;;
   3-1)
     shouji.sh "${projectnum}" 
@@ -66,24 +69,24 @@ case "${qq}" in
     shouji.sh "${projectnum}" 
     ;;
   8-1)
-    :
+    default
     ;;
   8-2)
-    :
+    default
     ;;
   9-1)
-    :
+    default
     ;;
   9-2)
-    :
+    default
     ;;
   10-1)
-    :
+    default
     ;;
   10-2)
-    :
+    default
     ;;
   *)
-    :
+    default
     ;;
 esac
