@@ -37,3 +37,7 @@ fi
 mkdir -p "${tempdir}"
 
 ln -s "${repodir}"/bin/sj.sh "${repodir}"/bin/sj
+
+ln -s "${repodir}"/bin/sj97.sh "${repodir}"/bin/sj97
+ln -s "${repodir}"/bin/sj112.sh "${repodir}"/bin/sj112
+ln -s "${repodir}"/bin/sj141.sh "${repodir}"/bin/sj141
