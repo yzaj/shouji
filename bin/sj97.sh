@@ -31,7 +31,7 @@ readonly oneself="$0"
 
 set +u
 readonly projectnum="$1"
-readonly qq="$2"
+qq="$2"
 set -u
 
 #### 主体 ####
@@ -40,9 +40,10 @@ if [[ -z "${projectnum}" ]]; then
 fi
 
 if [[ "${projectnum}" == "11" ]]; then
-  shouji.sh "${projectnum}" 101-104 115-116 118-130 132-134
-  exit
+  qq='a'
 fi
+
+readonly qq
 
 case "${qq}" in
   a)
