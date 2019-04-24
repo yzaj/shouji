@@ -10,6 +10,10 @@ set -euo pipefail
 #### 函数 ####
 
 #### 变量 ####
+set +u
+readonly projectnum="$1"
+readonly qq="$2"
+set -u
 
 #### 主体 ####
 
