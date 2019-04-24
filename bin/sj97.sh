@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 112区
+# 97区
 set -euo pipefail
 
 #### 常量 ####
@@ -45,65 +45,20 @@ if [[ "${projectnum}" == "11" ]]; then
 fi
 
 case "${qq}" in
-  1-1)
-    err_uo
-    ;;
-  1-2)
-    err_uo
-    ;;
-  2-1)
-    err_uo
-    ;;
-  2-2)
-    err_uo
-    ;;
   3-1)
-    shouji.sh "${projectnum}" 
-    ;;
-  3-2)
     shouji.sh "${projectnum}" 
     ;;
   4-1)
     shouji.sh "${projectnum}" 
     ;;
-  4-2)
-    shouji.sh "${projectnum}" 
-    ;;
   5-1)
-    shouji.sh "${projectnum}" 
-    ;;
-  5-2)
     shouji.sh "${projectnum}" 
     ;;
   6-1)
     shouji.sh "${projectnum}" 
     ;;
-  6-2)
-    shouji.sh "${projectnum}" 
-    ;;
   7-1)
     shouji.sh "${projectnum}" 
-    ;;
-  7-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  8-1)
-    err_uo
-    ;;
-  8-2)
-    err_uo
-    ;;
-  9-1)
-    err_uo
-    ;;
-  9-2)
-    err_uo
-    ;;
-  10-1)
-    err_uo
-    ;;
-  10-2)
-    err_uo
     ;;
   *)
     err_uo
