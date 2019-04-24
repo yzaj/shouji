@@ -45,6 +45,9 @@ if [[ "${projectnum}" == "11" ]]; then
 fi
 
 case "${qq}" in
+  a)
+    shouji.sh "${projectnum}" 101-104 115-116 118-130 132-134
+    ;;
   3-1)
     shouji.sh "${projectnum}" 119-130 133-134
     ;;
