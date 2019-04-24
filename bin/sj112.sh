@@ -40,70 +40,25 @@ if [[ -z "${projectnum}" ]]; then
 fi
 
 if [[ "${projectnum}" == "11" ]]; then
-  shouji.sh "${projectnum}" 
+  shouji.sh "${projectnum}" 101-134
   exit
 fi
 
 case "${qq}" in
-  1-1)
-    err_uo
-    ;;
-  1-2)
-    err_uo
-    ;;
-  2-1)
-    err_uo
-    ;;
-  2-2)
-    err_uo
-    ;;
-  3-1)
-    shouji.sh "${projectnum}" 
-    ;;
   3-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  4-1)
-    shouji.sh "${projectnum}" 
+    shouji.sh "${projectnum}" 101-134
     ;;
   4-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  5-1)
-    shouji.sh "${projectnum}" 
+    shouji.sh "${projectnum}" 101-134
     ;;
   5-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  6-1)
-    shouji.sh "${projectnum}" 
+    shouji.sh "${projectnum}" 101-134
     ;;
   6-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  7-1)
-    shouji.sh "${projectnum}" 
+    shouji.sh "${projectnum}" 101-134
     ;;
   7-2)
-    shouji.sh "${projectnum}" 
-    ;;
-  8-1)
-    err_uo
-    ;;
-  8-2)
-    err_uo
-    ;;
-  9-1)
-    err_uo
-    ;;
-  9-2)
-    err_uo
-    ;;
-  10-1)
-    err_uo
-    ;;
-  10-2)
-    err_uo
+    shouji.sh "${projectnum}" 101-125 127-134
     ;;
   *)
     err_uo
