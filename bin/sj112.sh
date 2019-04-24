@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 主程序
+# 112区
 set -euo pipefail
 
 
