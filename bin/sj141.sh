@@ -62,7 +62,7 @@ case "${qq}" in
     shouji.sh "${projectnum}" 101-118 131-132
     ;;
   7-1)
-    shouji.sh "${projectnum}" 101-114 117-118 131-132
+    shouji.sh "${projectnum}" 101-114 117-118 126 131-132
     ;;
   *)
     err_uo
