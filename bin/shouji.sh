@@ -70,15 +70,15 @@ case "${projectnum}" in
     ;;
   24)
     # 中间停止
-    phone.sh ${phonenums} right-center,sleep:3,click
+    phone.sh ${phonenums} right-center
     ;;
   25)
     # 左下停止
-    phone.sh ${phonenums} left-lower,sleep:3,click
+    phone.sh ${phonenums} left-lower
     ;;
   26)
     # 右下停止
-    phone.sh ${phonenums} right-lower,sleep:3,click
+    phone.sh ${phonenums} right-lower
     ;;
   31)
     # 重启
