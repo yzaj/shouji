@@ -20,7 +20,7 @@ err() {
 # 返回值: 
 # 备  注: 该函数的使用范围受限
 err_uo() {
-  sed -n 25,45p "${ROOTDIR}"/shouji/bin/sj.sh
+  sed -n 25,51p "${ROOTDIR}"/shouji/bin/sj.sh
   
   err "${oneself##*/}: unrecognized option '${qq}'"
   exit "${E_UNRECOGNIZED_OPTION}"
