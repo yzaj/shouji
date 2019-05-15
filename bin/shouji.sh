@@ -114,7 +114,7 @@ case "${projectnum}" in
     ;;
   42)
     # 进入 TL
-    phone.sh ${phonenums} enter-tl
+    phone.sh ${phonenums} enter-tl,sleep:5,enter-tl2
     ;;
   43)
     # 关闭广告
