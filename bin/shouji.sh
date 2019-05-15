@@ -54,7 +54,7 @@ case "${projectnum}" in
     ;;
   16)
     # 切换账号
-    phone.sh ${phonenums} left-top,sleep:5,blue,sleep:10,white
+    phone.sh ${phonenums} annc,left-top,sleep:5,blue,sleep:10,white
     ;;
   21)
     # 中间开始
