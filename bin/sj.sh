@@ -37,11 +37,11 @@ cat <<-'EOF'
 26    右下停止
 
 31    重启
-32    关机
-33    截屏
-34    安装 APK
-35    Fastboot   （线刷）
-36    Recovery
+33    关机
+34    截屏
+35    安装 APK
+36    Fastboot   （线刷）
+37    Recovery
 
 
 EOF

@@ -84,23 +84,23 @@ case "${projectnum}" in
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
-  32)
+  33)
     # 关机
     phone.sh ${phonenums} exit-fw,exit-tl,halt
     ;;
-  33)
+  34)
     # 截屏
     phone.sh ${phonenums} screencap
     ;;
-  34)
+  35)
     # 安装 APK
     phone.sh ${phonenums} apk
     ;;
-  35)
+  36)
     # Fastboot
     phone.sh ${phonenums} bootloader
     ;;
-  36)
+  37)
     # Recovery
     phone.sh ${phonenums} recovery
     ;;
