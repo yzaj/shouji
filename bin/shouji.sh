@@ -34,7 +34,7 @@ readonly phonenums
 case "${projectnum}" in
   11)
     # 重启解锁
-    phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:60,unlock
+    phone.sh ${phonenums} exit-fw,exit-tl,reboot,sleep:50,sleep:60,unlock
     ;;
   12)
     # 打开 FW
@@ -84,6 +84,10 @@ case "${projectnum}" in
     # 重启
     phone.sh ${phonenums} exit-fw,exit-tl,reboot
     ;;
+  32)
+    # 解锁
+    phone.sh ${phonenums} unlock
+    ;;
   33)
     # 关机
     phone.sh ${phonenums} exit-fw,exit-tl,halt
@@ -103,6 +107,22 @@ case "${projectnum}" in
   37)
     # Recovery
     phone.sh ${phonenums} recovery
+    ;;
+  41)
+    # 关闭公告
+    phone.sh ${phonenums} annc
+    ;;
+  42)
+    # 进入 TL
+    phone.sh ${phonenums} enter-tl
+    ;;
+  43)
+    # 关闭广告
+    phone.sh ${phonenums} ad
+    ;;
+  44)
+    # 打开背包
+    phone.sh ${phonenums} backpack
     ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
