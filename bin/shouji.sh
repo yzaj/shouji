@@ -124,6 +124,10 @@ case "${projectnum}" in
     # 打开背包
     phone.sh ${phonenums} backpack
     ;;
+  45)
+    # 关闭 4G
+    phone.sh ${phonenums} g4
+    ;;
   *)
     err "${oneself##*/}: unrecognized option '${projectnum}'"
     exit "${E_UNRECOGNIZED_OPTION}"
